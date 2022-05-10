@@ -10,7 +10,7 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 - **ppm image output** 
 > ![png](docs/output.png)
 - **line rasterization**
-- > ![png](docs/line.png)
+> ![png](docs/line.png)
 - **easy to add command line arguments**
 
 ## DEPS
