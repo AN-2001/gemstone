@@ -8,6 +8,7 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 > ![png](docs/palette.png)
 > ![png](docs/interp.png)
 - **ppm image output** 
+> ![png](docs/output.png)
 - **line rasterization**
 - **easy to add command line arguments**
 
