@@ -22,20 +22,13 @@ int main(int argc, const char *argv[]){
 		fprintf(stderr, "couldn't open image\n");
 		return 1;
 	}
-	float centX = WIDTH/2;
-	float centY = HEIGHT/2;
-	for(int i = 0; i < 100; i++){
-		for(int x = 0; x < WIDTH; x++){
-			for(int y = 0; y < HEIGHT; y++){
-				float d = sqrt((x - centX) * (x - centX) + (y - centY)*(y - centY));
-				setCurrentColour(paletteInterp((d / (sqrt(WIDTH*WIDTH + HEIGHT*HEIGHT)/10)) * PALETTE_MAX_INDEX));
-				fillPixel(img, x , y, USE_CUSTOM_COLOUR);
-			}
+	for(int i = 0; i < WIDTH; i++){
+		for(int j = 0; j < HEIGHT; j++){
+			fillPixel(img, i, j, i / (WIDTH /PALETTE_COUNT));
 		}
-		outputImage(img, path, i, 100);
-		centX ++;
-		centY ++;
 	}
+	outputImage(img, path, ONE_IMG);
+
 	paletteFree(p);
 	gemDestroy(img);
 	return 0;
