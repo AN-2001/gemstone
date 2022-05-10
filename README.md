@@ -6,8 +6,8 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 ## features
 - **palette loading from csv files**
 - **palette interpolation**
-> ![ppm](docs/palette.ppm)
-> ![ppm](docs/interp.ppm)
+> ![png](docs/palette.png)
+> ![png](docs/interp.png)
 - **ppm image output** 
 - **line rasterization**
 - **easy to add command line arguments**
