@@ -1,14 +1,14 @@
 # gemstone
-A skeleton project for generating nice and **colourful** visualizations!
 The project follows a basic structure, the user does their drawing commands on an image object, they may choose to output one or multiple images(incase they want to do animations)
 The skeleton only handles basic operations, such as manipulating pixels in an image, manipulating colours in the palette and very simple image I/O.
 
 ## features
 - **palette loading from csv files**
 - **palette interpolation**
-> ![ppm](docs/palette.ppm)
-> ![ppm](docs/interp.ppm)
+> ![png](docs/palette.png)
+> ![png](docs/interp.png)
 - **ppm image output** 
+> ![png](docs/output.png)
 - **line rasterization**
 - **easy to add command line arguments**
 
