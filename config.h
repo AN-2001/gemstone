@@ -3,6 +3,6 @@
 #define WIDTH 400
 #define HEIGHT 100
 #define NUM_ARGS 2
-#define PROJ "skeleton"
+#define PROJ "gemstone"
 #endif // CONFIG_H
 

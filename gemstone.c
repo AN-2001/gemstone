@@ -24,7 +24,7 @@ int main(int argc, const char *argv[]){
 	}
 	for(int i = 0; i < WIDTH; i++){
 		for(int j = 0; j < HEIGHT; j++){
-			fillPixel(img, i, j, i / ((float)WIDTH /PALETTE_COUNT));
+			fillPixel(img, i, j, (i / ((float)WIDTH /PALETTE_COUNT)));
 		}
 	}
 	outputImage(img, path, ONE_IMG);

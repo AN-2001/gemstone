@@ -1,8 +1,8 @@
 cc := gcc
-flags := -Wall -Werror -pedantic-errors
+flags := -Wall -Werror -pedantic-errors -g
 libs := -lm
 obj := linkedList.o raster.o colour.o boilerplate.o gemWriter.o
-proj := skeleton
+proj := gemstone
 
 all: $(proj)
 

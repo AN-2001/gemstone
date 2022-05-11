@@ -87,6 +87,9 @@ static Colour paletteInterp(float v){
 	int lower = floorf(v);
 	int higher = ceilf(v);
 	float frac = v - lower;
+	if(v == 0){
+		asm("int3");
+	}
 	return linearInterp(frac, lower, higher);
 }
 
