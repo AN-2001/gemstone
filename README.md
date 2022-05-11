@@ -5,12 +5,12 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 ## features
 - **palette loading from csv files**
 - **palette interpolation**
-> ![png](assets/palette.png)
-> ![png](assets/interp.png)
+> ![palette](assets/palette.png)
+> ![interp](assets/interp.png)
 - **ppm image output** 
-> ![png](assets/output.png)
+> ![output](assets/output.png)
 - **line rasterization**
-> ![png](assets/line.png)
+> ![line](assets/line.png)
 - **easy to add command line arguments**
 
 ## DEPS
@@ -21,5 +21,14 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 - make picking colours more seamless (integrate colour interpolation as the default)
 
 ## EXAMPLES
+> ![example1](assets/example1.gif)
+
+> ![example2](assets/example2.gif)
+
+> ![example3](assets/example3.png)
+
+> ![example4](assets/example4.png)
+
+> ![example5](assets/example5.png)
 
 ## THIS PROJECT IS A WORK IN PROGRESS, YOU CAN CHECK MY PROFILE FOR MORE COMPLEX EXAMPLES
