@@ -22,6 +22,7 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 
 ## EXAMPLES
 > these two examples might look "glitchy" since I'm using a monte-carlo method to make rendering faster.
+> 
 > ![example1](assets/example1.gif)
 > ![example2](assets/example2.gif)
 
