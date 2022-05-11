@@ -18,7 +18,6 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 
 ## goals
 - POSIX compliant command line arguments
-- make picking colours more seamless (integrate colour interpolation as the default)
 
 ## EXAMPLES
 > ![example1](assets/example1.gif)

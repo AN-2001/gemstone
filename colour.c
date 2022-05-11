@@ -66,9 +66,9 @@ int paletteGetCount(){
 		return 0;
 	return currPalette->count;
 }
-// interpolation code //
 
-static Colour linearInterp(double t, Cindex c1, Cindex c2){
+// interpolation code //
+static Colour linearInterp(long double t, int c1, int c2){
 	if(!currPalette)
 		return currColour;
 	if(!IS_VALID(c1) || !IS_VALID(c2))
@@ -82,11 +82,11 @@ static Colour linearInterp(double t, Cindex c1, Cindex c2){
 	return PACK(r, g, b);
 }
 
-Colour paletteInterp(float v){
+static Colour paletteInterp(float v){
 	v = fmax(fmin(v, currPalette->count - 1), 0);
 	int lower = floorf(v);
 	int higher = ceilf(v);
-	long double frac = v - lower;
+	float frac = v - lower;
 	return linearInterp(frac, lower, higher);
 }
 
@@ -97,14 +97,14 @@ Colour paletteInterp(float v){
 void setBackground(Gem img, Cindex index){
 	if(!currPalette)
 		return;
-	Colour c = IS_VALID(index) ? currPalette->p[index] : currColour;
+	Colour c = IS_VALID(index) ? paletteInterp(index) : currColour;
 	gemSetBackGround(img, c);
 } 
 
 void fillPixel(Gem img, int x, int y, Cindex index){
 	if(!currPalette)
 		return;
-	Colour c = IS_VALID(index) ? currPalette->p[index] : currColour;
+	Colour c = IS_VALID(index) ? paletteInterp(index) : currColour;
 	gemSetPixel(img, x, y, c);
 }
 

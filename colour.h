@@ -9,22 +9,23 @@
 #define B(c) (((c) & 0xff))
 #define PACK(r, g, b) (((b) & 0xff) | ((g & 0xff) << 8) | ((r & 0xff) << 16)) 
 typedef int Colour;
-typedef int Cindex;
+typedef float Cindex;
 typedef struct palette_t *Palette;
 
+// set the current background colour
+// TODO: add lazy evaluation?
+// index is a float between 0 and PALETTE_MAX_INDEX
 void setBackground(Gem img, Cindex index);
+
+// fill the pixel at (x,y)
+// index is a float between 0 and PALETTE_MAX_INDEX
 void fillPixel(Gem img, int x, int y, Cindex index);
-// TODO: do these later
-//void fillRect(Gem *img, int x, int y, int w, int h, Cindex index);
-//void fillCircle(Gem *img, int x, int y, int r, Cindex index);
-///////////////////////
+
+// set the current custom colour
 void setCurrentColour(Colour c);
 
 // loads a palette from a CSV file
 Palette paletteLoad(const char *csvPath);
-
-// interpolate the palette
-Colour paletteInterp(float v);
 
 // frees a palette
 void paletteFree(Palette p);
