@@ -22,7 +22,6 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 > ![](assets/example3.png)
 > ![](assets/blobs.png)
 > ![](assets/fractal.png)
-> ![](assets/output.png)
 > ![](assets/mandelbrot.png)
 > ![](assets/pastel.png)
 > ![](assets/spiral.png)
