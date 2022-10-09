@@ -4,19 +4,21 @@ The project follows a basic structure, the user does their drawing commands on a
 The skeleton only handles basic operations, such as manipulating pixels in an image, manipulating colours in the palette and very simple image I/O.
 
 ## features
-- **palette loading from csv files**
-- **palette interpolation**
+- **Palette loading from csv files.**
+- **Palette interpolation.**
 > ![palette](assets/palette.png)
 > ![interp](assets/interp.png)
-- **ppm image output** 
+- **PPM image output.** 
 > ![output](assets/output.png)
 - **Primitives including points, lines and triangles.**
-- **easy to add command line arguments**
+- **Easy to add command line arguments.**
+- **Setup script to quickly get new projects going.**
 
 ## DEPS
 **NONE WE FINALLY HAVE NO DEPENDENCIES!**
 
 ## EXAMPLES
+> ![](assets/reactionDiff1.gif)
 > ![](assets/example2.gif)
 > ![](assets/example3.png)
 > ![](assets/blobs.png)
@@ -28,6 +30,4 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 > ![](assets/triangleGrid.png)
 > ![](assets/boolean.png)
 > ![](assets/poster3.png)
-
-
-
+> ![](assets/reactionDiff2.gif)
