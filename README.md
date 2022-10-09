@@ -27,6 +27,8 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 > ![](assets/spiral.png)
 > ![](assets/tree.png)
 > ![](assets/triangleGrid.png)
+> ![](assets/boolean.png)
+> ![](assets/poster3.png)
 
 
 
