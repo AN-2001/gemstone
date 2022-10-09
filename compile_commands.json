@@ -1,0 +1,18 @@
+[
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-fPIC",
+            "-Wall",
+            "-Werror",
+            "-pedantic-errors",
+            "-I/home/amber/projects/gemstone/include",
+            "-o",
+            "/home/amber/projects/gemstone/src/gem.o",
+            "src/gem.c"
+        ],
+        "directory": "/home/amber/projects/gemstone",
+        "file": "src/gem.c"
+    }
+]
