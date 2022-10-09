@@ -17,7 +17,6 @@ The skeleton only handles basic operations, such as manipulating pixels in an im
 **NONE WE FINALLY HAVE NO DEPENDENCIES!**
 
 ## EXAMPLES
-> ![](assets/example1.gif)
 > ![](assets/example2.gif)
 > ![](assets/example3.png)
 > ![](assets/blobs.png)
