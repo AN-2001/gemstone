@@ -120,7 +120,7 @@ static void gemWrite_(Gem img, const char *path){
 	// fwrite(img->pixels, sizeof(*img->pixels), img -> width * img -> height, file);
 	
 	for (int i = 0; i < img -> width * img -> height; i++) {
-		fwrite(img->pixels + i, sizeof(*img->pixels), 3, file);
+		fwrite(img->pixels + i, 1, 3, file);
 	}
 
 	fclose(file);
